@@ -1,0 +1,6 @@
+analytics/__pycache__
+analytics/.venv
+analytics/logs
+
+.DS_Store
+

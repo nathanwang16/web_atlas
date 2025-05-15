@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Self-Analytics Logger",
+  "description": "Logs URLs, dwell-time, typed text length, copy/paste size.",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab",
+    "storage",
+    "webRequest",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "bg.js" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["cs.js"],
+    "run_at": "document_idle"
+  }]
+}
