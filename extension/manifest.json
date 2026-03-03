@@ -1,19 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "Self-Analytics Logger",
-  "description": "Logs URLs, dwell-time, typed text length, copy/paste size.",
-  "version": "0.1",
+  "name": "Web Atlas Logger",
+  "description": "Self-analytics: URLs, dwell-time, navigation, search, input events.",
+  "version": "0.2",
   "permissions": [
     "tabs",
     "scripting",
     "activeTab",
     "storage",
     "webRequest",
+    "webNavigation",
     "clipboardRead",
     "clipboardWrite"
   ],
   "host_permissions": ["<all_urls>"],
   "background": { "service_worker": "bg.js" },
+  "omnibox": { "keyword": "wa" },
   "content_scripts": [{
     "matches": ["<all_urls>"],
     "js": ["cs.js"],

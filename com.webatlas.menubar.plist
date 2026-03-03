@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+=============================================================================
+Web Atlas Menu Bar Status - macOS Launch Agent
+=============================================================================
+Shows server status in the menu bar. Optional - for users who want visual
+feedback without opening terminal.
+
+To install: cp this file to ~/Library/LaunchAgents/
+To activate: launchctl load ~/Library/LaunchAgents/com.webatlas.menubar.plist
+To remove: launchctl unload ~/Library/LaunchAgents/com.webatlas.menubar.plist
+=============================================================================
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.webatlas.menubar</string>
+    
+    <key>ServiceDescription</key>
+    <string>Web Atlas Menu Bar Status Indicator</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/xiaoyuwang/web_atlas/start_menubar.sh</string>
+    </array>
+    
+    <!-- Start on login -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <!-- Don't restart if user quits it -->
+    <key>KeepAlive</key>
+    <false/>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/xiaoyuwang/web_atlas/analytics</string>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/xiaoyuwang/web_atlas/analytics/logs/menubar.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/xiaoyuwang/web_atlas/analytics/logs/menubar_error.log</string>
+    
+    <key>LimitLoadToSessionType</key>
+    <string>Aqua</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+=============================================================================
+Web Atlas Personal Analytics Server - macOS Launch Agent
+=============================================================================
+This Launch Agent automatically starts your personal Web Atlas server when
+you log into your Mac. This is YOUR OWN analytics service running locally.
+
+What this does:
+- Starts the Web Atlas server on login (http://127.0.0.1:5000)
+- Keeps the server running (restarts if it crashes)
+- Logs output to your analytics/logs directory
+- ALL DATA STAYS ON YOUR COMPUTER
+
+Security:
+- Only accessible from localhost (127.0.0.1)
+- No network access beyond your computer
+- You own and control all data and code
+
+To install: cp this file to ~/Library/LaunchAgents/
+To activate: launchctl load ~/Library/LaunchAgents/com.webatlas.logger.plist
+To remove: launchctl unload ~/Library/LaunchAgents/com.webatlas.logger.plist
+=============================================================================
+-->
+<plist version="1.0">
+<dict>
+    <!-- Service identifier -->
+    <key>Label</key>
+    <string>com.webatlas.logger</string>
+    
+    <!-- Human-readable description -->
+    <key>ServiceDescription</key>
+    <string>Web Atlas Personal Analytics Server - Your own browsing data logger</string>
+    
+    <!-- Command to run -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/xiaoyuwang/web_atlas/start_logger.sh</string>
+    </array>
+    
+    <!-- Start automatically on login -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <!-- Restart if the process dies -->
+    <key>KeepAlive</key>
+    <true/>
+    
+    <!-- Working directory -->
+    <key>WorkingDirectory</key>
+    <string>/Users/xiaoyuwang/web_atlas/analytics</string>
+    
+    <!-- Log files (your logs, your control) -->
+    <key>StandardOutPath</key>
+    <string>/Users/xiaoyuwang/web_atlas/analytics/logs/server_startup.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/xiaoyuwang/web_atlas/analytics/logs/server_error.log</string>
+    
+    <!-- Only run when user is logged in (not as root) -->
+    <key>LimitLoadToSessionType</key>
+    <string>Aqua</string>
+    
+    <!-- Environment variables -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>

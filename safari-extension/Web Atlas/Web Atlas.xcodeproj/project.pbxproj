@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0ACD4E62F2740D100D10160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4E52F2740D100D10160 /* AppDelegate.swift */; };
+		F0ACD4E82F2740D100D10160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4E72F2740D100D10160 /* SceneDelegate.swift */; };
+		F0ACD4EB2F2740D100D10160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4E92F2740D100D10160 /* LaunchScreen.storyboard */; };
+		F0ACD4EE2F2740D100D10160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4EC2F2740D100D10160 /* Main.storyboard */; };
+		F0ACD4F72F2740D100D10160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4F62F2740D100D10160 /* AppDelegate.swift */; };
+		F0ACD4FA2F2740D100D10160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4F82F2740D100D10160 /* Main.storyboard */; };
+		F0ACD5012F2740D100D10160 /* Web Atlas Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F0ACD5002F2740D100D10160 /* Web Atlas Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0ACD50B2F2740D100D10160 /* Web Atlas Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F0ACD50A2F2740D100D10160 /* Web Atlas Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0ACD5102F2740D100D10160 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D52F2740D000D10160 /* Main.html */; };
+		F0ACD5112F2740D100D10160 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D52F2740D000D10160 /* Main.html */; };
+		F0ACD5122F2740D100D10160 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D72F2740D000D10160 /* Icon.png */; };
+		F0ACD5132F2740D100D10160 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D72F2740D000D10160 /* Icon.png */; };
+		F0ACD5142F2740D100D10160 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D82F2740D000D10160 /* Style.css */; };
+		F0ACD5152F2740D100D10160 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D82F2740D000D10160 /* Style.css */; };
+		F0ACD5162F2740D100D10160 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D92F2740D000D10160 /* Script.js */; };
+		F0ACD5172F2740D100D10160 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4D92F2740D000D10160 /* Script.js */; };
+		F0ACD5182F2740D100D10160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4DA2F2740D000D10160 /* ViewController.swift */; };
+		F0ACD5192F2740D100D10160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4DA2F2740D000D10160 /* ViewController.swift */; };
+		F0ACD51A2F2740D100D10160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4DB2F2740D100D10160 /* Assets.xcassets */; };
+		F0ACD51B2F2740D100D10160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD4DB2F2740D100D10160 /* Assets.xcassets */; };
+		F0ACD51C2F2740D100D10160 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4DD2F2740D100D10160 /* SafariWebExtensionHandler.swift */; };
+		F0ACD51D2F2740D100D10160 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ACD4DD2F2740D100D10160 /* SafariWebExtensionHandler.swift */; };
+		F0ACD5322F2740D100D10160 /* bg.js in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD52F2F2740D100D10160 /* bg.js */; };
+		F0ACD5332F2740D100D10160 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD5302F2740D100D10160 /* manifest.json */; };
+		F0ACD5342F2740D100D10160 /* cs.js in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD5312F2740D100D10160 /* cs.js */; };
+		F0ACD5352F2740D100D10160 /* bg.js in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD52F2F2740D100D10160 /* bg.js */; };
+		F0ACD5362F2740D100D10160 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD5302F2740D100D10160 /* manifest.json */; };
+		F0ACD5372F2740D100D10160 /* cs.js in Resources */ = {isa = PBXBuildFile; fileRef = F0ACD5312F2740D100D10160 /* cs.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0ACD5022F2740D100D10160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ACD4CF2F2740D000D10160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0ACD4FF2F2740D100D10160;
+			remoteInfo = "Web Atlas Extension (iOS)";
+		};
+		F0ACD50C2F2740D100D10160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ACD4CF2F2740D000D10160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0ACD5092F2740D100D10160;
+			remoteInfo = "Web Atlas Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0ACD5232F2740D100D10160 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F0ACD5012F2740D100D10160 /* Web Atlas Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD52A2F2740D100D10160 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F0ACD50B2F2740D100D10160 /* Web Atlas Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0ACD4D62F2740D000D10160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		F0ACD4D72F2740D000D10160 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F0ACD4D82F2740D000D10160 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F0ACD4D92F2740D000D10160 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F0ACD4DA2F2740D000D10160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0ACD4DB2F2740D100D10160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0ACD4DD2F2740D100D10160 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		F0ACD4E22F2740D100D10160 /* Web Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Atlas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ACD4E52F2740D100D10160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0ACD4E72F2740D100D10160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0ACD4EA2F2740D100D10160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0ACD4ED2F2740D100D10160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0ACD4EF2F2740D100D10160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0ACD4F42F2740D100D10160 /* Web Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Atlas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ACD4F62F2740D100D10160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0ACD4F92F2740D100D10160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0ACD4FB2F2740D100D10160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0ACD5002F2740D100D10160 /* Web Atlas Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Web Atlas Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ACD5052F2740D100D10160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0ACD50A2F2740D100D10160 /* Web Atlas Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Web Atlas Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0ACD50F2F2740D100D10160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0ACD52F2F2740D100D10160 /* bg.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = bg.js; path = ../../../extension/bg.js; sourceTree = "<group>"; };
+		F0ACD5302F2740D100D10160 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		F0ACD5312F2740D100D10160 /* cs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = cs.js; path = ../../../extension/cs.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0ACD4DF2F2740D100D10160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD4F12F2740D100D10160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD4FD2F2740D100D10160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD5072F2740D100D10160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0ACD4CE2F2740D000D10160 = {
+			isa = PBXGroup;
+			children = (
+				F0ACD4D32F2740D000D10160 /* Shared (App) */,
+				F0ACD4DC2F2740D100D10160 /* Shared (Extension) */,
+				F0ACD4E42F2740D100D10160 /* iOS (App) */,
+				F0ACD4F52F2740D100D10160 /* macOS (App) */,
+				F0ACD5042F2740D100D10160 /* iOS (Extension) */,
+				F0ACD50E2F2740D100D10160 /* macOS (Extension) */,
+				F0ACD4E32F2740D100D10160 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0ACD4D32F2740D000D10160 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD4DA2F2740D000D10160 /* ViewController.swift */,
+				F0ACD4DB2F2740D100D10160 /* Assets.xcassets */,
+				F0ACD4D42F2740D000D10160 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		F0ACD4D42F2740D000D10160 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD4D52F2740D000D10160 /* Main.html */,
+				F0ACD4D72F2740D000D10160 /* Icon.png */,
+				F0ACD4D82F2740D000D10160 /* Style.css */,
+				F0ACD4D92F2740D000D10160 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0ACD4DC2F2740D100D10160 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD52E2F2740D100D10160 /* Resources */,
+				F0ACD4DD2F2740D100D10160 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		F0ACD4E32F2740D100D10160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD4E22F2740D100D10160 /* Web Atlas.app */,
+				F0ACD4F42F2740D100D10160 /* Web Atlas.app */,
+				F0ACD5002F2740D100D10160 /* Web Atlas Extension.appex */,
+				F0ACD50A2F2740D100D10160 /* Web Atlas Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0ACD4E42F2740D100D10160 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD4E52F2740D100D10160 /* AppDelegate.swift */,
+				F0ACD4E72F2740D100D10160 /* SceneDelegate.swift */,
+				F0ACD4E92F2740D100D10160 /* LaunchScreen.storyboard */,
+				F0ACD4EC2F2740D100D10160 /* Main.storyboard */,
+				F0ACD4EF2F2740D100D10160 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		F0ACD4F52F2740D100D10160 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD4F62F2740D100D10160 /* AppDelegate.swift */,
+				F0ACD4F82F2740D100D10160 /* Main.storyboard */,
+				F0ACD4FB2F2740D100D10160 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		F0ACD5042F2740D100D10160 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD5052F2740D100D10160 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F0ACD50E2F2740D100D10160 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD50F2F2740D100D10160 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F0ACD52E2F2740D100D10160 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACD52F2F2740D100D10160 /* bg.js */,
+				F0ACD5302F2740D100D10160 /* manifest.json */,
+				F0ACD5312F2740D100D10160 /* cs.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0ACD4E12F2740D100D10160 /* Web Atlas (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ACD5242F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas (iOS)" */;
+			buildPhases = (
+				F0ACD4DE2F2740D100D10160 /* Sources */,
+				F0ACD4DF2F2740D100D10160 /* Frameworks */,
+				F0ACD4E02F2740D100D10160 /* Resources */,
+				F0ACD5232F2740D100D10160 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0ACD5032F2740D100D10160 /* PBXTargetDependency */,
+			);
+			name = "Web Atlas (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Web Atlas (iOS)";
+			productReference = F0ACD4E22F2740D100D10160 /* Web Atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0ACD4F32F2740D100D10160 /* Web Atlas (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ACD52B2F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas (macOS)" */;
+			buildPhases = (
+				F0ACD4F02F2740D100D10160 /* Sources */,
+				F0ACD4F12F2740D100D10160 /* Frameworks */,
+				F0ACD4F22F2740D100D10160 /* Resources */,
+				F0ACD52A2F2740D100D10160 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0ACD50D2F2740D100D10160 /* PBXTargetDependency */,
+			);
+			name = "Web Atlas (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Web Atlas (macOS)";
+			productReference = F0ACD4F42F2740D100D10160 /* Web Atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0ACD4FF2F2740D100D10160 /* Web Atlas Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ACD5202F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas Extension (iOS)" */;
+			buildPhases = (
+				F0ACD4FC2F2740D100D10160 /* Sources */,
+				F0ACD4FD2F2740D100D10160 /* Frameworks */,
+				F0ACD4FE2F2740D100D10160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Web Atlas Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Web Atlas Extension (iOS)";
+			productReference = F0ACD5002F2740D100D10160 /* Web Atlas Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F0ACD5092F2740D100D10160 /* Web Atlas Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0ACD5272F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas Extension (macOS)" */;
+			buildPhases = (
+				F0ACD5062F2740D100D10160 /* Sources */,
+				F0ACD5072F2740D100D10160 /* Frameworks */,
+				F0ACD5082F2740D100D10160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Web Atlas Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Web Atlas Extension (macOS)";
+			productReference = F0ACD50A2F2740D100D10160 /* Web Atlas Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0ACD4CF2F2740D000D10160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					F0ACD4E12F2740D100D10160 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F0ACD4F32F2740D100D10160 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F0ACD4FF2F2740D100D10160 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F0ACD5092F2740D100D10160 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = F0ACD4D22F2740D000D10160 /* Build configuration list for PBXProject "Web Atlas" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0ACD4CE2F2740D000D10160;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F0ACD4E32F2740D100D10160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0ACD4E12F2740D100D10160 /* Web Atlas (iOS) */,
+				F0ACD4F32F2740D100D10160 /* Web Atlas (macOS) */,
+				F0ACD4FF2F2740D100D10160 /* Web Atlas Extension (iOS) */,
+				F0ACD5092F2740D100D10160 /* Web Atlas Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0ACD4E02F2740D100D10160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD5122F2740D100D10160 /* Icon.png in Resources */,
+				F0ACD4EB2F2740D100D10160 /* LaunchScreen.storyboard in Resources */,
+				F0ACD5102F2740D100D10160 /* Main.html in Resources */,
+				F0ACD5162F2740D100D10160 /* Script.js in Resources */,
+				F0ACD51A2F2740D100D10160 /* Assets.xcassets in Resources */,
+				F0ACD4EE2F2740D100D10160 /* Main.storyboard in Resources */,
+				F0ACD5142F2740D100D10160 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD4F22F2740D100D10160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD5132F2740D100D10160 /* Icon.png in Resources */,
+				F0ACD5152F2740D100D10160 /* Style.css in Resources */,
+				F0ACD4FA2F2740D100D10160 /* Main.storyboard in Resources */,
+				F0ACD5172F2740D100D10160 /* Script.js in Resources */,
+				F0ACD51B2F2740D100D10160 /* Assets.xcassets in Resources */,
+				F0ACD5112F2740D100D10160 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD4FE2F2740D100D10160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD5372F2740D100D10160 /* cs.js in Resources */,
+				F0ACD5362F2740D100D10160 /* manifest.json in Resources */,
+				F0ACD5352F2740D100D10160 /* bg.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD5082F2740D100D10160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD5342F2740D100D10160 /* cs.js in Resources */,
+				F0ACD5332F2740D100D10160 /* manifest.json in Resources */,
+				F0ACD5322F2740D100D10160 /* bg.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0ACD4DE2F2740D100D10160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD5182F2740D100D10160 /* ViewController.swift in Sources */,
+				F0ACD4E62F2740D100D10160 /* AppDelegate.swift in Sources */,
+				F0ACD4E82F2740D100D10160 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD4F02F2740D100D10160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD5192F2740D100D10160 /* ViewController.swift in Sources */,
+				F0ACD4F72F2740D100D10160 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD4FC2F2740D100D10160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD51C2F2740D100D10160 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0ACD5062F2740D100D10160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACD51D2F2740D100D10160 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0ACD5032F2740D100D10160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0ACD4FF2F2740D100D10160 /* Web Atlas Extension (iOS) */;
+			targetProxy = F0ACD5022F2740D100D10160 /* PBXContainerItemProxy */;
+		};
+		F0ACD50D2F2740D100D10160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0ACD5092F2740D100D10160 /* Web Atlas Extension (macOS) */;
+			targetProxy = F0ACD50C2F2740D100D10160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0ACD4D52F2740D000D10160 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0ACD4D62F2740D000D10160 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		F0ACD4E92F2740D100D10160 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0ACD4EA2F2740D100D10160 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0ACD4EC2F2740D100D10160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0ACD4ED2F2740D100D10160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0ACD4F82F2740D100D10160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0ACD4F92F2740D100D10160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0ACD51E2F2740D100D10160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0ACD51F2F2740D100D10160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F0ACD5212F2740D100D10160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas.Extension";
+				PRODUCT_NAME = "Web Atlas Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0ACD5222F2740D100D10160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas.Extension";
+				PRODUCT_NAME = "Web Atlas Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0ACD5252F2740D100D10160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas";
+				PRODUCT_NAME = "Web Atlas";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0ACD5262F2740D100D10160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas";
+				PRODUCT_NAME = "Web Atlas";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0ACD5282F2740D100D10160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas.Extension";
+				PRODUCT_NAME = "Web Atlas Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0ACD5292F2740D100D10160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas.Extension";
+				PRODUCT_NAME = "Web Atlas Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F0ACD52C2F2740D100D10160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas";
+				PRODUCT_NAME = "Web Atlas";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0ACD52D2F2740D100D10160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Atlas";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Web-Atlas";
+				PRODUCT_NAME = "Web Atlas";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0ACD4D22F2740D000D10160 /* Build configuration list for PBXProject "Web Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ACD51E2F2740D100D10160 /* Debug */,
+				F0ACD51F2F2740D100D10160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ACD5202F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ACD5212F2740D100D10160 /* Debug */,
+				F0ACD5222F2740D100D10160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ACD5242F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ACD5252F2740D100D10160 /* Debug */,
+				F0ACD5262F2740D100D10160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ACD5272F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ACD5282F2740D100D10160 /* Debug */,
+				F0ACD5292F2740D100D10160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0ACD52B2F2740D100D10160 /* Build configuration list for PBXNativeTarget "Web Atlas (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0ACD52C2F2740D100D10160 /* Debug */,
+				F0ACD52D2F2740D100D10160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0ACD4CF2F2740D000D10160 /* Project object */;
+}
